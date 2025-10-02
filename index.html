@@ -1,18 +1,268 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Практические задания</title>
+    <title>Итоговая работа Зайнетдинова</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-  <h1>Практические задания</h1>
-  <ol>
-    <li><a href="task1.html">Практическое задание №1</a></li>
-    <li><a href="task2.html">Практическое задание №2</a></li>
-    <li><a href="task3.html">Практическое задание №3</a></li>
-    <li><a href="task4.html">Практическое задание №4</a></li>
-  </ol>
-  
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="#" class="logo">Flower<span>Garden</span></a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
+                        <li class="nav__item"><a href="#menu" class="nav__link">Каталог</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">О нас</a></li>
+                        <li class="nav__item"><a href="#reviews" class="nav__link">Отзывы</a></li>
+                        <li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <button class="menu-toggle" aria-label="Меню">
+                    <span class="menu-toggle__line"></span>
+                    <span class="menu-toggle__line"></span>
+                    <span class="menu-toggle__line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero__title">цветы <br>выражающие <br> эмоции <br>и чувства</h1>
+                <p class="hero__subtitle">Доставка букетов на заказ</p>
+                <div class="hero__buttons">
+                    <a href="#menu" class="btn btn--primary">Выбрать букет</a>
+                    <a href="#contacts" class="btn btn--outline">Найти нас</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about__inner">
+                    <div class="about__image">
+                        <img src="images/about.png" alt="о нас">
+                    </div>
+                    <div class="about__content">
+                        <h2 class="section-title">Быстрая доставка цветов в Уфе</h2>
+                        <p class="about__text">Мы выращиваем наши цветы с любовью и вниманием, специально для Вас.</p>
+                        <p class="about__text">Трепетно относимся к доставке и доставляем Вам эстетическое удовольствие.</p>
+                        <ul class="about__features">
+                            <li class="feature-item">
+                                <span></span>
+                            </li>
+                            <li class="feature-item">
+                                <i class='fas fa-spa'></i> 	&emsp;
+                                <span>Всегда свежие цветы</span>
+                            </li>
+                            <li class="feature-item">
+                                <i class='fas fa-spa'></i> 	&emsp;
+                                <span>Подберем и доставим в течение часа</span>
+                            </li>
+                            <li class="feature-item">
+                                <i class='fas fa-spa'></i> 	&emsp;
+                                <span>Соберем букет на любой вкус и цвет</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="menu">
+            <div class="container">
+                <h2 class="section-title">Каталог</h2>
+                <div class="menu__content active" id="coffee">
+                    <div class="menu__grid">
+                        <div class="menu-item">
+                            <div class="menu-item__header">
+                                <h3 class="menu-item__title">Букет "PASSION"</h3>
+                                <span class="menu-item__price">3500&emsp;<i class="fa fa-rub" aria-hidden="true"></i></span>
+                            </div>
+                            <img src="images/bouquet-1.png" alt="букет-1">
+                            <p class="menu-item__description">Кустовые пионовидные розы, эвкалипт, 9 шт</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item__header">
+                                <h3 class="menu-item__title">Букет "AURORA"</h3>
+                                <span class="menu-item__price">2500&emsp;<i class="fa fa-rub" aria-hidden="true"></i></span>
+                            </div>
+                            <img src="images/bouquet-2.png" alt="букет-2">
+                            <p class="menu-item__description">Розовые французские розы, эвкалипт, 5 шт</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item__header">
+                                <h3 class="menu-item__title">Букет "Loveliness"</h3>
+                                <span class="menu-item__price">6000&emsp;<i class="fa fa-rub" aria-hidden="true"></i></span>
+                            </div>
+                            <img src="images/bouquet-3.png" alt="букет-3">
+                            <p class="menu-item__description">Разноцветные тюльпаны, 51 шт</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item__header">
+                                <h3 class="menu-item__title">Букет "Holiday"</h3>
+                                <span class="menu-item__price">3500&emsp;<i class="fa fa-rub" aria-hidden="true"></i></span>
+                            </div>
+                            <img src="images/bouquet-4.png" alt="букет-4">
+                            <p class="menu-item__description">10 шт альстромерии, 3 шт гипсофил</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item__header">
+                                <h3 class="menu-item__title">Букет "Elegance"</h3>
+                                <span class="menu-item__price">4500&emsp;<i class="fa fa-rub" aria-hidden="true"></i></span>
+                            </div>
+                            <img src="images/bouquet-5.png" alt="букет-5">
+                            <p class="menu-item__description">Голубые гортензии 5 шт,белые кустовые розы 20 шт, эвкалипт</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item__header">
+                                <h3 class="menu-item__title">Букет "Jador"</h3>
+                                <span class="menu-item__price">8500&emsp;<i class="fa fa-rub" aria-hidden="true"></i></span>
+                            </div>
+                            <img src="images/bouquet-6.png" alt="букет-6">
+                            <p class="menu-item__description">Красные розы 25 шт, эвкалипт</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="reviews" class="reviews">
+            <div class="container">
+                <h2 class="section-title">Отзывы</h2>
+                <div class="reviews__slider">
+                    <div class="review">
+                        <div class="review__rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review__text">Очень красивый букет собрали, свежий, яркий. Огромное спасибо вам за такую красоту и за возможность радовать близких людей</p>
+                        <div class="review__author">
+                            <img src="images/avatar-1.png" alt="аватар-1"
+                                class="review__photo">
+                            <span class="review__name">Виктория</span>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="review__rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review__text">Всё просто шикарно. Быстро. Цветы отличные. Простояли больше недели.
+Спасибо!</p>
+                        <div class="review__author">
+                            <img src="images/avatar-2.png" alt="аватар-2"
+                                class="review__photo">
+                            <span class="review__name">Александр</span>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="review__rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review__text">Букет красивый. Заранее прислали фото. Привезли ко времени. Цены очень хорошие.</p>
+                        <div class="review__author">
+                            <img src="images/avatar-3.png" alt="аватар-3"
+                                class="review__photo">
+                            <span class="review__name">Ангелина</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacts" class="contacts">
+            <div class="container">
+                <div class="contacts__inner">
+                    <div class="contacts__info">
+                        <h2 class="section-title">Контакты</h2>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt contact-icon"></i>
+                            <span>Уфа, ул. Рихарда Зорге, 30</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone contact-icon"></i>
+                            <span>+7 (905) 555-01-93</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <span>flowergarden@mail.ru</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock contact-icon"></i>
+                            <span>ежедневно, 10:00–22:00</span>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link" aria-label="Telegram"><i
+                                    class="fab fa-telegram-plane"></i></a>
+                        </div>
+                    </div>
+                    <div class="contacts__map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3872.2037755153233!2d55.987185572377804!3d54.75489392728366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43d939f147d9c0d9%3A0x6b6c2eade666523f!2z0YPQuy4g0KDQuNGF0LDRgNC00LAg0JfQvtGA0LPQtSwgMzAsINCj0YTQsCwg0KDQtdGB0L8uINCR0LDRiNC60L7RgNGC0L7RgdGC0LDQvSwgNDUwMDU5!5e0!3m2!1sru!2sru!4v1759364430784!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__logo">
+                    <a href="#" class="logo">Flower<span>Garden</span></a>
+                    <p class="footer__text">Доставка букетов на заказ</p>
+                </div>
+                <div class="footer__nav">
+                    <h3 class="footer__title">Навигация</h3>
+                    <ul class="footer__list">
+                        <li><a href="#" class="footer__link">Главная</a></li>
+                        <li><a href="#menu" class="footer__link">Каталог</a></li>
+                        <li><a href="#about" class="footer__link">О нас</a></li>
+                        <li><a href="#reviews" class="footer__link">Отзывы</a></li>
+                        <li><a href="#contacts" class="footer__link">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer__subscribe">
+                    <h3 class="footer__title">Подписка</h3>
+                    <p class="footer__text">Подпишитесь на наши новости и акции</p>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Ваш email" class="subscribe-input">
+                        <button type="submit" class="subscribe-btn"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">© Copyright 2025. Все права защищены </p>
+            </div>
+        </div>
+    </footer>
+
+
 </body>
+
 </html>
